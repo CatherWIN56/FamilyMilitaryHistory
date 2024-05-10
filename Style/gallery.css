@@ -1,0 +1,88 @@
+.navbar {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #113243, #076de2, #1b5470);
+    height: 50px;
+    /*repeating-linear-gradient(to right, #553c9a, #ee4b2b 10%, #553c9a 20%);*/
+}
+/*All Navbar's are the same format*/
+.navbar-left {
+    float: left;
+    font-size: 20px;
+}
+.navbar-brand {
+    padding-left: 20px;
+    margin-top: -4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar-brand a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Hamburger DropDown Menu*/
+.p-menu1{
+    height: 100%;
+}
+.menu-container {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: transform 0.5s ease;
+}
+.dropdown-menu {
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.dropdown-menu ul li {
+    padding: 5px 0;
+}
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.dropdown-menu ul li a:hover {
+    padding: 5px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+.show-menu {
+    display: block;
+    z-index: 999;
+}
+.change:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.change:nth-child(2) {
+    opacity: 0;
+}
+.change:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+/*End of Hamburger DropDown*/

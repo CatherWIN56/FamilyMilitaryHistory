@@ -1,0 +1,411 @@
+/*Chris*/
+.h1-c2{
+    color: #4b5320;
+}
+.navbar-chris {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #2a2929, #696e4a, #4b5320);
+    height: 50px;
+}
+
+/*Chris Animated Photos*/
+.animated-banner-chris {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation: bannerAnimationChris 10s infinite alternate; /* Change timing as needed */
+}
+@keyframes bannerAnimationChris {
+    0% {
+        background-image: url('../Images/Christopher/Chris1.jpg');
+        filter: brightness(50%);
+    }
+    50% {
+        background-image: url('../Images/Christopher/Chris2.jpg');
+        filter: brightness(50%);
+    }
+    100% {
+        background-image: url('../Images/Christopher/Chris3.jpg');
+        filter: brightness(50%);
+    }
+}
+
+/*Formatting for the Name*/
+.name-chris{
+    font-size: 60px;
+    font-family: Caveat, Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(67, 129, 11);
+}
+
+/*Button CSS CHRISTOPHER*/
+.button-chris {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 10px;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 30px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 180px;
+    word-break: keep-all;
+    z-index: 0;
+}
+.button-chris:before {
+    background-image: linear-gradient(92.83deg, #696e4a 0, #4b5320 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+    border-radius: 35px;
+}
+.button-chris:after {
+    background-color: initial;
+    background-image: linear-gradient(#4b5320 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+    border-radius: 35px;
+}
+.button-chris:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgb(105, 110, 74) 0%, rgb(75, 83, 32) 100%);
+}
+.button-chris:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    border-radius: 25px;
+}
+.button-chris:active:not(:disabled) {
+    color: #ccc;
+}
+.button-chris:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #696e4a 0, #4b5320 100%);
+
+}
+.button-chris:active:not(:disabled):after {
+    background-image: linear-gradient(#4b5320 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+.button-chris:disabled {
+    cursor: default;
+    opacity: .24;
+}
+.button-chris:hover{
+    background-color: #4b5320;
+    border-radius: 35px;
+
+}
+/*End Button CSS CHRISTOPHER*/
+
+
+.flexing{
+    display: flex;
+    width: 100%;
+}
+.flex-one{
+    flex: 1;
+    margin: 20px;
+}
+.flex-two{
+    flex: 1;
+    margin: 20px
+}
+.info-box{
+    height: auto;
+    width: 100%;
+
+    border-radius: 40px;
+    background-color: #d3d3d3;
+    border: #4b5320 solid 5px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+    inset -5px -5px 5px rgba(51, 49, 49, 0.5),
+    5px 5px 5px rgba(0,0,0,0.05),
+    -5px -5px 5px rgba(148, 146, 146, 0.63);
+}
+.photo-boxes{
+    height: 500px;
+    width: 100%;
+    border-radius: 40px;
+}
+.image-one{
+    float: right;
+    /*border: #3B36D1 solid 3px;*/
+    border-radius: 15px;
+    margin-top: -500px;
+    margin-right: 370px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    height: 300px;
+    width: 230px;
+}
+.image-one img{
+    border-radius: 15px;
+    height: 300px;
+    width: 230px;
+    object-fit: cover;
+}
+.image-two{
+    float: right;
+    border-radius: 15px;
+    margin-top: -330px;
+    margin-right: 100px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 240px;
+    min-width: 350px;
+}
+.image-two img{
+    border-radius: 15px;
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+}
+.image-three{
+    float: right;
+    border-radius: 15px;
+    margin-top: -500px;
+    margin-right: 20px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 300px;
+    min-width: 200px;
+}
+.image-three img{
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.image-four{
+    float: left;
+    /*border: #3B36D1 solid 3px;*/
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -500px;
+    margin-left: 30px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    height: 400px;
+    width: 300px;
+    z-index: 2;
+}
+.image-four img{
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+.image-five{
+    float: left;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -330px;
+    margin-left: 240px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 250px;
+    min-width: 300px;
+    z-index: 1;
+}
+.image-five img{
+    border-radius: 15px;
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+}
+.image-six{
+    float: left;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -540px;
+    margin-left: 340px;
+    padding: 5px 5px 3px;
+    /*background-color: #363434;*/
+    min-height: 200px;
+    min-width: 200px;
+    z-index: 3;
+}
+.image-six img{
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.image-seven{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -970px;
+    margin-left: 670px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 300px;
+    min-width: 400px;
+    z-index: 1;
+}
+.image-seven img{
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+.image-eight{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -1100px;
+    margin-left: 950px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    /* min-height: auto;
+    min-width: auto; */
+    z-index: 2;
+}
+.image-eight img{
+    border-radius: 15px;
+    height: 300px;
+    width: auto;
+    object-fit: scale-down;
+}
+.image-nine{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -430px;
+    margin-left: 670px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 390px;
+    min-width: 500px;
+    z-index: 4;
+}
+.image-nine img{
+    border-radius: 15px;
+    height: 390px;
+    width: 500px;
+    object-fit: cover;
+}
+.image-ten{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -750px;
+    margin-left: 900px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    /* min-height: 300px;
+    min-width: auto; */
+    z-index: 4;
+}
+.image-ten img{
+    border-radius: 15px;
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+.image-eleven{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -630px;
+    margin-left: 650px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    /* min-height: 250px;
+    min-width: 200px; */
+    z-index: 5;
+}
+.image-eleven img{
+    border-radius: 15px;
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+.image-twelve{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -250px;
+    margin-left: 890px;
+    padding: 5px 5px 3px;
+    /* background-color: #363434; */
+    min-height: 250px;
+    min-width: 400px;
+    z-index: 6;
+}
+.image-twelve img{
+    border-radius: 15px;
+    height: auto;
+    width: 130px;
+    object-fit: cover;
+}
+
+.image-thirteen{
+    position: absolute;
+    border-radius: 15px;
+    margin-top: -620px;
+    margin-left: 50px;
+    padding: 5px 5px 3px;
+    /*background-color: #363434;*/
+    /* min-height: 100px;
+    min-width: 200px; */
+    z-index: 6;
+}
+.image-thirteen img{
+    border-radius: 15px;
+    height:500px;
+    width: auto;
+    object-fit: scale-down;
+}
+
+
+.h1-c{
+    font-size: 50px;
+    font-family: Satisfy, Arial, sans-serif;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}

@@ -1,0 +1,194 @@
+/*Formatting for Homepage*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  Background  */
+.backwrap {
+    background: #113243;
+    /* Old browsers */
+    /*background-color: #363434;*/
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1100;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
+}
+
+.introduction{
+    background-color: rgba(240, 240, 240, 0.82);
+    /*padding-top: 20px;*/
+    width: 60%;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it's on top of other content */
+    margin-top: 20px;
+    margin-left: 20%;
+    font-size: 15px;
+    color: #363434;
+    padding: 20px;
+    /* box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+    inset -5px -5px 5px rgba(255,255,255,0.5),
+    5px 5px 5px rgba(0,0,0,0.05),
+    -5px -5px 5px rgba(255, 255, 255, 0.63); */
+}
+h4{
+    font-size: 30px;
+}
+
+.flex-container{
+    margin-top: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.homepage-container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    background-color: #5d5a5a;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05),
+    inset -1px -1px 1px rgba(255,255,255,0.5),
+    1px 1px 1px rgba(0,0,0,0.05),
+    -1px -1px 1px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+.card-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .card-box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background-image: url("../Images/Box-Images/Doug.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+h3{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.card:hover h3,
+.card:hover p{
+    color: #fff;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+.card:hover a{
+    background: #e02828;
+}
+
+
+/*Chris Thunder*/
+.card-box-chris{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .card-box-chris{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background-image: url("../Images/Box-Images/Chris.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Catherine Clark*/
+.card-box-cath{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .card-box-cath{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background-image: url("../Images/Box-Images/Catherine.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*End Formatting for Homepage*/
